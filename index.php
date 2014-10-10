@@ -51,7 +51,7 @@ include "../../functions.php";
 
 // Checking POST & GET variables...
 if ($regex == 1) {
-	regex_standard($_POST["newdata"], "msg.php", $regex_extra);
+    regex_standard($_POST["newdata"], "msg.php", $regex_extra);
     regex_standard($_GET["logfile"], "msg.php", $regex_extra);
     regex_standard($_GET["action"], "msg.php", $regex_extra);
     regex_standard($_POST["service"], "msg.php", $regex_extra);
@@ -88,7 +88,7 @@ include "includes/options_config.php";
     if (file_exists("/usr/sbin/ettercap")) { 
         echo "&nbsp;$mod_name <font style='color:lime'>installed</font><br>";
     } else {
-        echo "&nbsp;$mod_name <a href='includes/module_action.php?install=install_ngrep' style='color:red'>install</a><br>";
+        echo "&nbsp;$mod_name <a href='includes/module_action.php?install=install_$mod_name' style='color:red'>install</a><br>";
     } 
     ?>
     
