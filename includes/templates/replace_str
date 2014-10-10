@@ -1,0 +1,12 @@
+if (ip.proto == TCP && tcp.dst == 80) {
+   if (search(DATA.data, "Accept-Encoding")) {
+      replace("Accept-Encoding", "Accept-Rubbish!"); 
+  # note: replacement string is same length as original string
+      msg("zapped Accept-Encoding!\n");
+   }
+}
+
+if (ip.proto == TCP && tcp.src == 80) {
+   replace("noticias", "FruityWifi");
+   msg("Filter Ran.\n");
+}
