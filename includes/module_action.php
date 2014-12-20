@@ -65,7 +65,7 @@ if($service != "") {
                     }
                 } else if ($tmp[$i] == "F") {
                     //$exec = "/usr/bin/etterfilter templates/" . $mode_options["F"][2] ." -o $mod_path/includes/filter.ef";
-                    $exec = "/usr/bin/etterfilter templates/" . $mode_options["F"][2];
+                    $exec = "$bin_etterfilter templates/" . $mode_options["F"][2];
                     //exec("$bin_danger \"$exec\"" ); //DEPRECATED
                     exec_fruitywifi($exec);
                     $options .= " -F $mod_path/includes/filter.ef ";
