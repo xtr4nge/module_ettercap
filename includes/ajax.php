@@ -18,6 +18,7 @@
 ?>
 <?php
 
+include "../../../login_check.php";
 include "../_info_.php";
 
 $type = $_POST['type'];
