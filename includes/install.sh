@@ -4,7 +4,7 @@ echo "installing ettercap..."
 #apt-get -y install ettercap
 
 apt-get -y install unzip
-apt-get -y install cmake libncurses5-dev libssl-dev libpcap-dev flex bison libgtk2.0-dev
+apt-get -y install cmake libncurses5-dev libssl-dev libpcap-dev flex bison libgtk2.0-dev libnet1-dev
 
 wget https://github.com/Ettercap/ettercap/archive/v0.8.0.tar.gz
 tar zxvf v0.8.0.tar.gz
